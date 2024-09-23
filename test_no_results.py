@@ -1,5 +1,5 @@
 import pytest
-from selene import browser, element, be, have, by
+from selene import browser, be, have, by
 
 
 def test_no_results(setup_browser):
