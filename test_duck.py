@@ -9,3 +9,4 @@ def setup_browser():
 
 def test_selene(setup_browser):
     assert setup_browser.element('[data-testid=web-vertical]').should(have.text('Selene - User-oriented Web UI browser tests in Python'))
+
