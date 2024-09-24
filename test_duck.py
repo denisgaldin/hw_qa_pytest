@@ -1,14 +1,4 @@
-import pytest
 from selene import browser, be, have
-
-
-@pytest.fixture(scope='function', autouse=True)
-def setup_browser():
-    browser.config.browser_name = 'chrome'
-    browser.config.base_url = 'https://duckduckgo.com'
-    browser.config.timeout = 10
-    yield
-    browser.quit()
 
 
 def test_duckduckgo_search():
